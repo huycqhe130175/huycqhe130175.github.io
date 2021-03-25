@@ -1,0 +1,112 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="mborder">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <label class="cal-label">Casio fx 500ms</label>
+                        </div>   
+                    </div>
+                    <div class="mpadding">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input class="mscreen" type="text" id="screen" name="screen" value="" disabled maxlength="50"/>
+                            </div>
+                        </div>
+                        <div class="row btnpadding">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="(" onclick="display('(')">(</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value=")" onclick="display(')')">)</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-danger" value="C" onclick="clr()">C</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-warning" value="Del" onclick="del()">Del</button>
+                            </div>
+                        </div>
+                        <div class="row btnpadding">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="7" onclick="display('7')">7</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="8" onclick="display('8')">8</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="9" onclick="display('9')">9</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-info" value="/" onclick="display('/')">/</button>
+                            </div>
+                        </div>
+                        <div class="row btnpadding">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="4" onclick="display('4')">4</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="5" onclick="display('5')">5</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="6" onclick="display('6')">6</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-info" value="*" onclick="display('*')">*</button>
+                            </div>
+                        </div>
+                        <div class="row btnpadding">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="1" onclick="display('1')">1</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="2" onclick="display('2')">2</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="3" onclick="display('3')">3</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-info" value="+" onclick="display('+')">+</button>
+                            </div>
+                        </div>
+                        <div class="row btnpadding">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="0" onclick="display('0')">0</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default" value="." onclick="display('.')">.</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-success" value="=" onclick="result()">=</button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-info" value="-" onclick="display('-')">-</button>
+                            </div>
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
